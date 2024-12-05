@@ -1,0 +1,2 @@
+# docs
+ConfigPanel documentation
