@@ -27,7 +27,7 @@ load(userPlugin({ namespace: 'forumUsers', table: 'forumUsers' }));
 
 ## Creating custom plugins
 
-```
+```ts
 import { load, type Plugin, type PluginOptions, defaultOptions, access } from '@configpanel/plugins';
 
 export const defaultNamespace = 'example';
