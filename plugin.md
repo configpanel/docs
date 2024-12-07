@@ -55,7 +55,7 @@ export function plugin(options?: MyPluginOptions): Plugin {
   return {
     id,
     plugin: new MyPlugin(),
-    ...defaultOptions(options)
+    ...defaultOptions(options, defaultNamespace)
   };
 }
 
