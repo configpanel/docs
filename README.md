@@ -13,7 +13,8 @@ ConfigPanel was created with extensibility in mind, to help you configure whatev
 
 These plugins are developed by ConfigPanel to provide commonly used features.
 
-- [User management & Login](,/plugins/user)
+- [User management & Login](./plugins/users)
+- [Page management](./plugins/pages)
 
 ### Plugin API
 
