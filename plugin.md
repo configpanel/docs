@@ -23,3 +23,54 @@ load(userPlugin({ namespace: 'forumUsers', table: 'forumUsers' }));
   const userThreads = await threads.by(user);
   console.log(userThreads);
 })();
+```
+
+## Creating custom plugins
+
+```
+import { load, type Plugin, type PluginOptions, defaultOptions, access } from '@configpanel/plugins';
+
+export const defaultNamespace = 'example';
+export const id = 'org.configpanel.example';
+
+class MyPlugin {
+  customProperty: string;
+
+  constructor(customProperty?: string) {
+    this.customProperty = customProperty ?? 'world';
+  }
+
+  hello() {
+    return `Hello, ${customProperty}!`;
+  }
+}
+
+interface MyPluginOptions extends PluginOptions {
+  customProperty?: string;
+}
+
+export function plugin(options?: MyPluginOptions): Plugin {
+  options ??= {};
+
+  return {
+    id,
+    plugin: new MyPlugin(),
+    ...defaultOptions(options)
+  };
+}
+
+export function hello() {
+  return (access(id)[defaultNamespace] as MyPlugin).hello();
+}
+
+export function namespace(namespace: string) {
+  return {
+    ...(access(id)[namespace] as MyPlugin);
+  };
+}
+
+load(plugin(), plugin({ namespace: 'name', customProperty: 'ConfigPanel' }));
+
+console.log(hello()); // Hello, world!
+console.log(namespace('name').hello()); // Hello, ConfigPanel!
+```
