@@ -1,21 +1,7 @@
 # ConfigPanel documentation
 
-## Setup & installation
+## Panel demo
 
-Setting up ConfigPanel is very simple. We created some guides to help you:
-- [SvelteKit installation guide](./installation/sveltekit)
+We have created a demo panel for everyone who wants to build their own, but does not know how it will look like. Please remember that this demo is just a static website and has no "real" backend.
 
-## Plugins
-
-ConfigPanel was created with extensibility in mind, to help you configure whatever you want.
-
-### Official plugins
-
-These plugins are developed by ConfigPanel to provide commonly used features.
-
-- [User management & Login](./plugins/users)
-- [Page management](./plugins/pages)
-
-### Plugin API
-
-[Create your own plugin!](./plugin)
+> Domain: [`demo.configpanel.org`](https://configpanel.org/login#url=demo.configpanel.org)  
