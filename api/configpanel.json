@@ -1,0 +1,10 @@
+{
+  "configpanel": 1,
+  "name": "ConfigPanel docs",
+  "credentials": false,
+  "login": {
+    "method": "get",
+    "endpoint": "/api/login.json",
+    "fields": []
+  }
+}
