@@ -9,5 +9,28 @@
     "url": "/panel/home.json",
     "icon": "house"
   },
-  "nav": []
+  "nav": [
+    {
+      "title": "Components",
+      "children": [
+        {
+          "title": "Action Buttons",
+          "id": "components/action-buttons",
+          "url": "/panel/components/action-buttons.json",
+          "icon": "square-chevron-right"
+        },
+        {
+          "title": "Table",
+          "id": "components/table",
+          "url": "/panel/components/table.json",
+          "icon": "table"
+        },
+        {
+          "title": "Text",
+          "id": "components/text",
+          "url": "/panel/components/text.json",
+          "icon": "case-sensitive"
+        }
+      ]
+  ]
 }
