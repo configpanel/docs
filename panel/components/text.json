@@ -1,0 +1,13 @@
+{
+  "title": "Text Component",
+  "content": [
+    {
+      "type": "text",
+      "text": "This is a text component. It allows you to enter any Markdown or HTML text you want, like [URLs](https://google.com/) and so on.\n# Heading 1\n## Heading 2\nthis is not a markdown guide tho."
+    },
+    {
+      "type": "text",
+      "text": "## Usage\n- `type`: `\"text\"`\n- `text`: `string` - The text you want to show in HTML/Markdown format"
+    }
+  ]
+}
