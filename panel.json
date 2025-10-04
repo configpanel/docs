@@ -1,0 +1,13 @@
+{
+  "user": {
+    "displayName": "Documentation",
+    "name": "docs",
+    "avatar": "https://github.com/configpanel.png"
+  },
+  "home": {
+    "title": "Home",
+    "url": "/panel/home.json",
+    "icon": "house"
+  },
+  "nav": []
+}
