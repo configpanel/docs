@@ -1,0 +1,51 @@
+{
+  "title": "Action Buttons",
+  "content": [
+    {
+      "type": "action-buttons",
+      "buttons": [
+        {
+          "type": "url",
+          "label": "Relative URL button",
+          "url": "components/text"
+        },
+        {
+          "type": "dialog"
+          "label": "Dialog button",
+          "title": "A dialog",
+          "target": {
+            "method": "get",
+            "endpoint": "/form.json"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "you can put anything inside here you would put on a normal page too. click ok. This is a form btw, so you can add input components to make a pretty form."
+            },
+            {
+              "type": "input",
+              "fields": {
+                "name": {
+                  "label": "Your name",
+                  "type": "text",
+                  "placeholder": "John Doe",
+                  "required": "false"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "url",
+          "label": "destructive!",
+          "url": "https://google.com",
+          "destructive": true
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "## Usage\n- `type`: `\"text\"`\n- `text`: `string` - The text you want to show in HTML/Markdown format"
+    }
+  ]
+}
