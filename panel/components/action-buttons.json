@@ -10,7 +10,7 @@
           "url": "components/text"
         },
         {
-          "type": "dialog"
+          "type": "dialog",
           "label": "Dialog button",
           "title": "A dialog",
           "target": {
